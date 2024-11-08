@@ -1,0 +1,1 @@
+﻿C:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_crm.c -D NDEBUG -o C:\Users\user\Desktop\at32f415_project\Release\Obj\drivers --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\DLib_Config_Normal.h" -Oh --c++ --no_exceptions --no_rtti

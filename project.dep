@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>148340593</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\Indication_M128i1x.h</file>
+            <file>$PROJ_DIR$\IndicationBase.h</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_misc.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\SystemInit.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_i2c.o</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cstdint</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_at32f415.o.rsp</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_usart.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_sdio.o</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_i2c.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_misc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_usb.o</file>
+            <file>$PROJ_DIR$\lib\cmsis\cm4\device_support\at32f415_conf.h</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_wdt.h</file>
+            <file>$PROJ_DIR$\Debug\List\project.map</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_sdio.h</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_debug.h</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_crm.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Indication_M128i1x.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_at32f415.o</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_dma.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_exint.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\xprintf.o</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_wwdt.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_ertc.o</file>
+            <file>$TOOLKIT_DIR$\lib\dlpp7M_tl_nc.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_spi.o</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+            <file>$PROJ_DIR$\lib\cmsis\cm4\core_support\mpu_armv7.h</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_def.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_crm.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_wwdt.o</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\at32f415_int.h</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_spi.h</file>
+            <file>$PROJ_DIR$\lib\cmsis\cm4\device_support\at32f415.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f415_int.o</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_tmr.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_flash.o</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_can.h</file>
+            <file>$PROJ_DIR$\lib\cmsis\cm4\device_support\system_at32f415.h</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_usart.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_ertc.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_pwc.o</file>
+            <file>$TOOLKIT_DIR$\lib\dlpprt7M_tl_nc.a</file>
+            <file>$PROJ_DIR$\AT32F415xC.icf</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_debug.o</file>
+            <file>$PROJ_DIR$\lib\cmsis\cm4\core_support\cmsis_iccarm.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\project.out</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_flash.h</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_adc.h</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_cmp.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\lib\cmsis\cm4\core_support\cmsis_version.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_gpio.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cstdarg</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$PROJ_DIR$\SystemInit.h</file>
+            <file>$PROJ_DIR$\RtcBase.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_crc.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\Rtc_at32f415.h</file>
+            <file>$PROJ_DIR$\lib\cmsis\cm4\device_support\startup\iar\startup_at32f415.s</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_at32f415.o</file>
+            <file>$PROJ_DIR$\StaticQueue.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_dma.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\lib\cmsis\cm4\core_support\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_gpio.h</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_usb.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_can.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_adc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\KeysBase.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\aarch32\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_exint.o</file>
+            <file>$PROJ_DIR$\Time.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_wdt.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$PROJ_DIR$\KeysBase.h</file>
+            <file>$PROJ_DIR$\Keys_M128i1x.h</file>
+            <file>$PROJ_DIR$\KeysBase.cpp</file>
+            <file>$PROJ_DIR$\main.cpp</file>
+            <file>$PROJ_DIR$\SystemInit.cpp</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_tmr.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_cmp.o</file>
+            <file>$PROJ_DIR$\lib\cmsis\cm4\device_support\system_at32f415.c</file>
+            <file>$PROJ_DIR$\xprintf.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\drivers\at32f415_crc.o</file>
+            <file>$PROJ_DIR$\lib\cmsis\cm4\core_support\core_cm4.h</file>
+            <file>$PROJ_DIR$\xprintf.h</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_pwc.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_gpio.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_crm.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_ertc.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_exint.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_tmr.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_usb.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_wdt.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_wwdt.c</file>
+            <file>$PROJ_DIR$\at32f415_int.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_misc.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_dma.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_sdio.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_usart.c</file>
+            <file>$PROJ_DIR$\lib\drivers\inc\at32f415_pwc.h</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_flash.c</file>
+            <file>$PROJ_DIR$\hardware.h</file>
+            <file>$PROJ_DIR$\Indication_M128i1x.cpp</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_i2c.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_debug.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_spi.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_adc.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_cmp.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_crc.c</file>
+            <file>$PROJ_DIR$\IndicatorConfig.h</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_can.c</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\project.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 14</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 65 27 48 29 62 34 49 19 81 3 39 80 79 94 97 32 51 74 26 84 41 59 4 10 47 8 28 93 7 11 86 33 71 20 72 24</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\cmsis\cm4\device_support\startup\iar\startup_at32f415.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 20</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 6</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\KeysBase.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 81</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 60 15 68 67 50 5 88 73</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.cpp</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 57 83 22 60 15 45 87 68 67 50 61 5 1 0 124 88 89 64 69 73 63 85 36 116 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25 99</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\SystemInit.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 3</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 63 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\cmsis\cm4\device_support\system_at32f415.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 72</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\xprintf.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 24</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 57 22 87 68 67 50 99</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_pwc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 47</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 59</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_crm.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 32</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_ertc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 26</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_exint.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 84</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_tmr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 93</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_usb.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 11</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_wdt.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 86</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_wwdt.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 33</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\at32f415_int.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 39</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 36 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_misc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 10</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_dma.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 74</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_sdio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 8</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_usart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 7</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_flash.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 41</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Indication_M128i1x.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 19</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 57 83 22 15 45 87 68 67 50 61 1 0 124 116 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25 99</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_i2c.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 4</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_debug.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 51</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_spi.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 28</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 80</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_cmp.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 94</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_crc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 97</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_can.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 79</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 82 35 83 15 68 50 76 52 58 98 30 38 12 43 55 42 56 66 18 17 31 21 46 23 54 77 9 2 114 16 37 40 44 78 13 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 53 14</file>
+                </tool>
+            </outputs>
+        </file>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs>
+            <file>$PROJ_DIR$\Indication_M128i1x.h</file>
+            <file>$PROJ_DIR$\IndicationBase.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cstdint</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_flash.o</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_ertc.o</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_exint.o</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_wdt.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_dma.o</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_cmp.o</file>
+            <file>$PROJ_DIR$\Release\Obj\main.o</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_crm.o</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_adc.o</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_gpio.o</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_tmr.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_usart.o</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_i2c.o</file>
+            <file>$PROJ_DIR$\Release\Obj\startup_at32f415.o.rsp</file>
+            <file>$PROJ_DIR$\Release\Obj\at32f415_int.o</file>
+            <file>$PROJ_DIR$\Release\Obj\startup_at32f415.o</file>
+            <file>$PROJ_DIR$\Release\Obj\SystemInit.o</file>
+            <file>$PROJ_DIR$\Release\Obj\system_at32f415.o</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_pwc.o</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_can.o</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_misc.o</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_wwdt.o</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_usb.o</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_sdio.o</file>
+            <file>$PROJ_DIR$\Release\Exe\project.out</file>
+            <file>$PROJ_DIR$\Release\Obj\xprintf.o</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_crc.o</file>
+            <file>$PROJ_DIR$\Release\Obj\Indication_M128i1x.o</file>
+            <file>$PROJ_DIR$\Release\Obj\KeysBase.o</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_spi.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\at32f415_int.h</file>
+            <file>$PROJ_DIR$\lib\cmsis\cm4\device_support\at32f415.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cstdarg</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\lib\cmsis\cm4\device_support\startup\iar\startup_at32f415.s</file>
+            <file>$PROJ_DIR$\StaticQueue.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$PROJ_DIR$\Release\Obj\drivers\at32f415_debug.o</file>
+            <file>$PROJ_DIR$\KeysBase.h</file>
+            <file>$PROJ_DIR$\KeysBase.cpp</file>
+            <file>$PROJ_DIR$\main.cpp</file>
+            <file>$PROJ_DIR$\SystemInit.cpp</file>
+            <file>$PROJ_DIR$\lib\cmsis\cm4\device_support\system_at32f415.c</file>
+            <file>$PROJ_DIR$\xprintf.c</file>
+            <file>$PROJ_DIR$\xprintf.h</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_pwc.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_gpio.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_crm.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_ertc.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_exint.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_tmr.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_usb.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_wdt.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_wwdt.c</file>
+            <file>$PROJ_DIR$\at32f415_int.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_misc.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_dma.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_sdio.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_usart.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_flash.c</file>
+            <file>$PROJ_DIR$\hardware.h</file>
+            <file>$PROJ_DIR$\Indication_M128i1x.cpp</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_i2c.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_debug.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_spi.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_adc.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_cmp.c</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_crc.c</file>
+            <file>$PROJ_DIR$\IndicatorConfig.h</file>
+            <file>$PROJ_DIR$\lib\drivers\src\at32f415_can.c</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\lib\cmsis\cm4\device_support\startup\iar\startup_at32f415.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 20</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 18</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\KeysBase.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 33</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 47 48 35 41 7 44 43 39 2 51 46</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 10</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\SystemInit.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 21</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\cmsis\cm4\device_support\system_at32f415.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 22</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 37</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\xprintf.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 30</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 47 48 35 40 15 49 44 43 39 57</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_pwc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 23</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 13</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_crm.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 11</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_ertc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 4</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_exint.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 5</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_tmr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 14</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_usb.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 27</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_wdt.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 6</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_wwdt.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 26</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\at32f415_int.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 19</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_misc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 25</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_dma.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 8</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_sdio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 28</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_usart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 16</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_flash.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 3</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Indication_M128i1x.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 32</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 47 48 35 40 15 7 38 49 44 43 39 42 1 0 81 73 57</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_i2c.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 17</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_debug.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 50</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_spi.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 34</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_cmp.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 9</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_crc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 31</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\drivers\src\at32f415_can.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 24</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 29</file>
+                </tool>
+            </outputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

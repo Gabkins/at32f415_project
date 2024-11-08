@@ -1,0 +1,329 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe" $flags
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe" $flags
+
+rule MAKEBROWSE
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe" $flags
+
+rule PDBLINK
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe" $flags
+
+
+
+#Build steps
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_adc.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_adc.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_adc.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_adc.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_adc.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_adc.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_adc.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_can.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_can.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_can.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_can.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_can.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_can.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_can.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_cmp.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_cmp.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_cmp.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_cmp.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_cmp.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_cmp.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_cmp.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crc.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_crc.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crc.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crc.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_crc.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crc.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crc.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crm.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_crm.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crm.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crm.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_crm.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crm.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crm.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_debug.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_debug.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_debug.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_debug.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_debug.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_debug.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_debug.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_dma.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_dma.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_dma.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_dma.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_dma.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_dma.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_dma.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_ertc.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_ertc.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_ertc.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_ertc.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_ertc.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_ertc.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_ertc.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_exint.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_exint.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_exint.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_exint.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_exint.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_exint.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_exint.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_flash.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_flash.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_flash.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_flash.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_flash.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_flash.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_flash.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_gpio.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_gpio.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_gpio.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_gpio.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_gpio.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_gpio.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_gpio.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_i2c.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_i2c.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_i2c.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_i2c.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_i2c.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_i2c.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_i2c.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_misc.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_misc.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_misc.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_misc.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_misc.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_misc.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_misc.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_pwc.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_pwc.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_pwc.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_pwc.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_pwc.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_pwc.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_pwc.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_sdio.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_sdio.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_sdio.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_sdio.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_sdio.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_sdio.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_sdio.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_spi.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_spi.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_spi.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_spi.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_spi.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_spi.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_spi.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_tmr.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_tmr.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_tmr.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_tmr.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_tmr.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_tmr.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_tmr.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usart.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_usart.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usart.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usart.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_usart.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usart.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usart.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usb.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_usb.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usb.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usb.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_usb.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usb.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usb.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wdt.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_wdt.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wdt.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wdt.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_wdt.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wdt.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wdt.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wwdt.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_wwdt.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wwdt.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wwdt.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_wwdt.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wwdt.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wwdt.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\at32f415_int.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\at32f415_int.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\at32f415_int.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\at32f415_int.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\at32f415_int.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\at32f415_int.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\at32f415_int.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\Indication_M128i1x.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\Indication_M128i1x.cpp -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\Indication_M128i1x.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\Indication_M128i1x.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\Indication_M128i1x.cpp -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\Indication_M128i1x.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\Indication_M128i1x.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\KeysBase.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\KeysBase.cpp -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\KeysBase.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\KeysBase.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\KeysBase.cpp -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\KeysBase.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\KeysBase.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\main.cpp -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\main.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\main.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\main.cpp -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\main.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\main.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\system_at32f415.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\system_at32f415.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\system_at32f415.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\system_at32f415.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\system_at32f415.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\system_at32f415.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\system_at32f415.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\SystemInit.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\SystemInit.cpp -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\SystemInit.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\SystemInit.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\SystemInit.cpp -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\SystemInit.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\SystemInit.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\xprintf.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\user\Desktop\at32f415_project\xprintf.c -xcl_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\xprintf.xcl -macro_file C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\xprintf.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\user\Desktop\at32f415_project\xprintf.c -D AT32F415RCT7 -o C$:\Users\user\Desktop\at32f415_project\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\core_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\ -I C$:\Users\user\Desktop\at32f415_project\lib\drivers\inc\ -I C$:\Users\user\Desktop\at32f415_project\ -On --c++ --no_exceptions --no_rtti -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\xprintf.tmp
+  rspfile_name = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\xprintf.xcl.rsp
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_adc.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_adc.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_adc.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_adc.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_adc.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_can.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_can.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_can.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_can.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_can.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_cmp.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_cmp.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_cmp.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_cmp.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_cmp.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crc.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crc.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_crc.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crc.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crc.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crm.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crm.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_crm.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crm.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crm.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_debug.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_debug.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_debug.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_debug.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_debug.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_dma.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_dma.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_dma.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_dma.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_dma.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_ertc.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_ertc.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_ertc.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_ertc.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_ertc.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_exint.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_exint.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_exint.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_exint.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_exint.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_flash.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_flash.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_flash.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_flash.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_flash.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_gpio.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_gpio.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_gpio.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_gpio.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_gpio.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_i2c.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_i2c.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_i2c.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_i2c.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_i2c.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_misc.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_misc.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_misc.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_misc.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_misc.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_pwc.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_pwc.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_pwc.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_pwc.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_pwc.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_sdio.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_sdio.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_sdio.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_sdio.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_sdio.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_spi.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_spi.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_spi.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_spi.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_spi.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_tmr.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_tmr.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_tmr.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_tmr.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_tmr.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usart.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usart.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_usart.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usart.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usart.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usb.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usb.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_usb.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usb.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usb.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wdt.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wdt.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_wdt.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wdt.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wdt.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wwdt.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wwdt.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\drivers\src\at32f415_wwdt.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wwdt.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wwdt.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\at32f415_int.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\at32f415_int.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\at32f415_int.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\at32f415_int.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\at32f415_int.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\Indication_M128i1x.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\Indication_M128i1x.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\Indication_M128i1x.cpp
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\Indication_M128i1x.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\Indication_M128i1x.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\KeysBase.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\KeysBase.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\KeysBase.cpp
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\KeysBase.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\KeysBase.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\main.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\main.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\main.cpp
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\main.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\main.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\system_at32f415.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\system_at32f415.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\lib\cmsis\cm4\device_support\system_at32f415.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\system_at32f415.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\system_at32f415.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\SystemInit.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\SystemInit.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\SystemInit.cpp
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\SystemInit.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\SystemInit.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\xprintf.pbi : INDEXER C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\xprintf.xcl |  $
+C$:\Users\user\Desktop\at32f415_project\xprintf.c
+  flags = -out=C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\xprintf.pbi -f C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\xprintf.xcl
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project.pbw : MAKEBROWSE C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project.pbd
+  flags = C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project.pbd -output C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project.pbw
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part0.pbi : PDBLINK C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_adc.pbi |  $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_can.pbi $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_cmp.pbi $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crc.pbi $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crm.pbi
+  flags = -M C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part0.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_adc.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_can.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_cmp.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crc.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_crm.pbi
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part1.pbi : PDBLINK C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_debug.pbi |  $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_dma.pbi $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_ertc.pbi $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_exint.pbi $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_flash.pbi
+  flags = -M C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part1.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_debug.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_dma.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_ertc.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_exint.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_flash.pbi
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part2.pbi : PDBLINK C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_gpio.pbi |  $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_i2c.pbi $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_misc.pbi $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_pwc.pbi $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_sdio.pbi
+  flags = -M C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part2.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_gpio.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_i2c.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_misc.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_pwc.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_sdio.pbi
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part3.pbi : PDBLINK C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_spi.pbi |  $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_tmr.pbi $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usart.pbi $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usb.pbi $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wdt.pbi
+  flags = -M C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part3.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_spi.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_tmr.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usart.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_usb.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wdt.pbi
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part4.pbi : PDBLINK C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wwdt.pbi |  $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\at32f415_int.pbi $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\Indication_M128i1x.pbi $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\KeysBase.pbi $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\main.pbi
+  flags = -M C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part4.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\drivers\at32f415_wwdt.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\at32f415_int.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\Indication_M128i1x.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\KeysBase.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\main.pbi
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part5.pbi : PDBLINK C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\system_at32f415.pbi |  $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\SystemInit.pbi $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\xprintf.pbi
+  flags = -M C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part5.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\system_at32f415.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\SystemInit.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\xprintf.pbi
+
+build C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project.pbd : PDBLINK C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part0.pbi |  $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part1.pbi $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part2.pbi $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part3.pbi $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part4.pbi $
+C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part5.pbi
+  flags = -M C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project.pbd C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part0.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part1.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part2.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part3.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part4.pbi C$:\Users\user\Desktop\at32f415_project\Debug\BrowseInfo\project_part5.pbi
+

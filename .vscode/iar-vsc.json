@@ -1,0 +1,21 @@
+{
+  "workspace": {
+    "path": "c:\\Users\\user\\Desktop\\,\\project\\at_start_f415\\examples\\usart\\printf\\iar_v7.4\\printf.eww"
+  },
+  "workspaces": {
+    "${workspaceFolder}\\project.eww": {
+      "configs": {
+        "${workspaceFolder}\\project.ewp": "Debug"
+      },
+      "selected": {
+        "path": "${workspaceFolder}\\project.ewp"
+      }
+    }
+  },
+  "workbench": {
+    "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 5.4"
+  },
+  "project": {
+    "path": "${workspaceFolder}\\project.ewp"
+  }
+}
