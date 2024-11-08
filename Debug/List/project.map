@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.20.1.318/W64 for ARM                  08/Nov/2024  16:52:04
+# IAR ELF Linker V9.20.1.318/W64 for ARM                  08/Nov/2024  17:40:55
 # Copyright 2007-2021 IAR Systems AB.
 #
 #    Output file  =
@@ -31,8 +31,8 @@
 #        C:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers\at32f415_usb.o
 #        C:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers\at32f415_wdt.o
 #        C:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers\at32f415_wwdt.o
-#        C:\Users\user\Desktop\at32f415_project\Debug\Obj\Indication_M128i1x.o
-#        C:\Users\user\Desktop\at32f415_project\Debug\Obj\KeysBase.o
+#        C:\Users\user\Desktop\at32f415_project\Debug\Obj\Indication\Indication_M128i1x.o
+#        C:\Users\user\Desktop\at32f415_project\Debug\Obj\Keys\KeysBase.o
 #        C:\Users\user\Desktop\at32f415_project\Debug\Obj\main.o
 #        C:\Users\user\Desktop\at32f415_project\Debug\Obj\startup_at32f415.o
 #        C:\Users\user\Desktop\at32f415_project\Debug\Obj\system_at32f415.o
@@ -92,23 +92,23 @@ initialize by copy { rw };
 
 "P1":                                          0x2100
   .text                  ro code   0x800'0170   0x378  xprintf.o [1]
-  .text                  ro code   0x800'04e8    0x36  strlen.o [5]
-  .text                  ro code   0x800'051e    0x2a  copy_init3.o [5]
-  .text                  ro code   0x800'0548   0x370  at32f415_crm.o [2]
-  .text                  ro code   0x800'08b8   0x350  at32f415_ertc.o [2]
-  .text                  ro code   0x800'0c08   0x244  KeysBase.o [1]
-  .text                  ro code   0x800'0e4c     0xe  KeysBase.o [1]
-  .text                  ro code   0x800'0e5a    0x10  KeysBase.o [1]
-  .text                  ro code   0x800'0e6a     0x8  KeysBase.o [1]
-  .text                  ro code   0x800'0e72    0x1a  KeysBase.o [1]
-  .text                  ro code   0x800'0e8c    0x14  memset.o [5]
-  .text                  ro code   0x800'0ea0    0x2c  KeysBase.o [1]
-  .text                  ro code   0x800'0ecc    0x66  ABImemset.o [5]
-  .rodata                const     0x800'0f32     0x2  KeysBase.o [1]
+  .text                  ro code   0x800'04e8    0x36  strlen.o [7]
+  .text                  ro code   0x800'051e    0x2a  copy_init3.o [7]
+  .text                  ro code   0x800'0548   0x370  at32f415_crm.o [4]
+  .text                  ro code   0x800'08b8   0x350  at32f415_ertc.o [4]
+  .text                  ro code   0x800'0c08   0x244  KeysBase.o [3]
+  .text                  ro code   0x800'0e4c     0xe  KeysBase.o [3]
+  .text                  ro code   0x800'0e5a    0x10  KeysBase.o [3]
+  .text                  ro code   0x800'0e6a     0x8  KeysBase.o [3]
+  .text                  ro code   0x800'0e72    0x1a  KeysBase.o [3]
+  .text                  ro code   0x800'0e8c    0x14  memset.o [7]
+  .text                  ro code   0x800'0ea0    0x2c  KeysBase.o [3]
+  .text                  ro code   0x800'0ecc    0x66  ABImemset.o [7]
+  .rodata                const     0x800'0f32     0x2  KeysBase.o [3]
   .text                  ro code   0x800'0f34   0x230  main.o [1]
   .text                  ro code   0x800'1164    0x1a  main.o [1]
   .rodata                const     0x800'117e     0x1  main.o [1]
-  .rodata                const     0x800'117f     0x1  unwind_debug.o [6]
+  .rodata                const     0x800'117f     0x1  unwind_debug.o [8]
   .text                  ro code   0x800'1180     0xc  main.o [1]
   .text                  ro code   0x800'118c    0x28  main.o [1]
   .text                  ro code   0x800'11b4    0x24  main.o [1]
@@ -123,39 +123,39 @@ initialize by copy { rw };
   .text                  ro code   0x800'14e6    0x32  main.o [1]
   .text                  ro code   0x800'1518    0x24  main.o [1]
   .text                  ro code   0x800'153c    0x6a  main.o [1]
-  .text                  ro code   0x800'15a8    0xa6  ABImemcpy.o [5]
+  .text                  ro code   0x800'15a8    0xa6  ABImemcpy.o [7]
   .text                  ro code   0x800'164e    0x32  main.o [1]
   .text                  ro code   0x800'1680    0x58  main.o [1]
-  .text                  ro code   0x800'16d8    0x14  at32f415_pwc.o [2]
+  .text                  ro code   0x800'16d8    0x14  at32f415_pwc.o [4]
   .text                  ro code   0x800'16ec   0x1f4  system_at32f415.o [1]
-  .text                  ro code   0x800'18e0    0x28  at32f415_misc.o [2]
-  .text                  ro code   0x800'1908   0x128  at32f415_gpio.o [2]
+  .text                  ro code   0x800'18e0    0x28  at32f415_misc.o [4]
+  .text                  ro code   0x800'1908   0x128  at32f415_gpio.o [4]
   .text                  ro code   0x800'1a30    0x10  main.o [1]
   .text                  ro code   0x800'1a40    0x30  main.o [1]
   .text                  ro code   0x800'1a70    0x6e  main.o [1]
   .text                  ro code   0x800'1ade    0x3a  main.o [1]
-  .text                  ro code   0x800'1b18   0x230  I64DivMod.o [5]
+  .text                  ro code   0x800'1b18   0x230  I64DivMod.o [7]
   .text                  ro code   0x800'1d48    0x40  main.o [1]
-  .text                  ro code   0x800'1d88     0x2  I64DivZer.o [5]
+  .text                  ro code   0x800'1d88     0x2  I64DivZer.o [7]
   .text                  ro code   0x800'1d8c    0x98  main.o [1]
   .text                  ro code   0x800'1e24    0x44  main.o [1]
   .text                  ro code   0x800'1e68    0x22  main.o [1]
   .text                  ro code   0x800'1e8c    0x60  main.o [1]
   .text                  ro code   0x800'1eec    0x30  main.o [1]
-  .rodata                const     0x800'1f1c    0x7c  Indication_M128i1x.o [1]
-  .text                  ro code   0x800'1f98    0x38  zero_init3.o [5]
+  .rodata                const     0x800'1f1c    0x7c  Indication_M128i1x.o [2]
+  .text                  ro code   0x800'1f98    0x38  zero_init3.o [7]
   .text                  ro code   0x800'1fd0    0x34  main.o [1]
-  .text                  ro code   0x800'2004    0x28  data_init.o [5]
+  .text                  ro code   0x800'2004    0x28  data_init.o [7]
   .iar.init_table        const     0x800'202c    0x28  - Linker created -
-  .text                  ro code   0x800'2054    0x20  cmain_call_ctors.o [5]
-  .text                  ro code   0x800'2074    0x18  cppinit.o [3]
-  .text                  ro code   0x800'208c    0x1e  cmain.o [5]
-  .text                  ro code   0x800'20aa     0x4  low_level_init.o [3]
-  .text                  ro code   0x800'20ae     0x4  exit.o [3]
-  .text                  ro code   0x800'20b4     0xa  cexit.o [5]
-  .text                  ro code   0x800'20c0    0x14  exit.o [6]
+  .text                  ro code   0x800'2054    0x20  cmain_call_ctors.o [7]
+  .text                  ro code   0x800'2074    0x18  cppinit.o [5]
+  .text                  ro code   0x800'208c    0x1e  cmain.o [7]
+  .text                  ro code   0x800'20aa     0x4  low_level_init.o [5]
+  .text                  ro code   0x800'20ae     0x4  exit.o [5]
+  .text                  ro code   0x800'20b4     0xa  cexit.o [7]
+  .text                  ro code   0x800'20c0    0x14  exit.o [8]
   .rodata                const     0x800'20d4    0x1c  main.o [1]
-  .text                  ro code   0x800'20f0    0x1c  cstartup_M.o [5]
+  .text                  ro code   0x800'20f0    0x1c  cstartup_M.o [7]
   .text                  ro code   0x800'210c    0x18  at32f415_int.o [1]
   .rodata                const     0x800'2124    0x14  main.o [1]
   .rodata                const     0x800'2138    0x10  main.o [1]
@@ -224,8 +224,8 @@ initialize by copy { rw };
   SHT$$INIT_ARRAY                  0x800'226c     0x4  <Block>
     .init_array          const     0x800'226c     0x4  main.o [1]
   __iar_tls$$INIT_ARRAY            0x800'2270     0x0  <Block>
-  .rodata                const     0x800'2270     0x0  zero_init3.o [5]
-  .rodata                const     0x800'2270     0x0  copy_init3.o [5]
+  .rodata                const     0x800'2270     0x0  zero_init3.o [7]
+  .rodata                const     0x800'2270     0x0  copy_init3.o [7]
                                  - 0x800'2270  0x2100
 
 "P2", part 1 of 3:                                0xc
@@ -244,7 +244,7 @@ initialize by copy { rw };
   .bss                   zero     0x2000'006c     0x4  xprintf.o [1]
   .bss                   zero     0x2000'0070     0x2  main.o [1]
   .bss                   zero     0x2000'0072     0x2  main.o [1]
-  .bss                   zero     0x2000'0074     0x1  Indication_M128i1x.o [1]
+  .bss                   zero     0x2000'0074     0x1  Indication_M128i1x.o [2]
   .bss                   zero     0x2000'0075     0x1  main.o [1]
   .bss                   zero     0x2000'0076     0x1  main.o [1]
   .bss                   zero     0x2000'0077     0x1  main.o [1]
@@ -299,8 +299,6 @@ command line/config:
     Total:
 
 C:\Users\user\Desktop\at32f415_project\Debug\Obj: [1]
-    Indication_M128i1x.o               124        1
-    KeysBase.o                688        2
     SystemInit.o              380
     at32f415_int.o             24
     main.o                  2'162       91      114
@@ -308,9 +306,19 @@ C:\Users\user\Desktop\at32f415_project\Debug\Obj: [1]
     system_at32f415.o         500       20        4
     xprintf.o                 888                 4
     -----------------------------------------------
-    Total:                  5'246      237      123
+    Total:                  4'558      111      122
 
-C:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers: [2]
+C:\Users\user\Desktop\at32f415_project\Debug\Obj\Indication: [2]
+    Indication_M128i1x.o               124        1
+    -----------------------------------------------
+    Total:                             124        1
+
+C:\Users\user\Desktop\at32f415_project\Debug\Obj\Keys: [3]
+    KeysBase.o                688        2
+    -----------------------------------------------
+    Total:                    688        2
+
+C:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers: [4]
     at32f415_crm.o            880
     at32f415_ertc.o           848
     at32f415_gpio.o           296
@@ -319,18 +327,18 @@ C:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers: [2]
     -----------------------------------------------
     Total:                  2'084
 
-dl7M_tln.a: [3]
+dl7M_tln.a: [5]
     cppinit.o                  24
     exit.o                      4
     low_level_init.o            4
     -----------------------------------------------
     Total:                     32
 
-dlpprt7M_tl_nc.a: [4]
+dlpprt7M_tl_nc.a: [6]
     -----------------------------------------------
     Total:
 
-rt7M_tl.a: [5]
+rt7M_tl.a: [7]
     ABImemcpy.o               166
     ABImemset.o               102
     I64DivMod.o               560
@@ -347,7 +355,7 @@ rt7M_tl.a: [5]
     -----------------------------------------------
     Total:                  1'142
 
-shb_l.a: [6]
+shb_l.a: [8]
     exit.o                     20
     unwind_debug.o                       1
     -----------------------------------------------
@@ -367,20 +375,20 @@ Entry                       Address   Size  Type      Object
 -----                       -------   ----  ----      ------
 .iar.init_table$$Base    0x800'202c          --   Gb  - Linker created -
 .iar.init_table$$Limit   0x800'2054          --   Gb  - Linker created -
-?main                    0x800'208d         Code  Gb  cmain.o [5]
+?main                    0x800'208d         Code  Gb  cmain.o [7]
 BusFault_Handler         0x800'2113    0x2  Code  Gb  at32f415_int.o [1]
 CSTACK$$Base            0x2000'0080          --   Gb  - Linker created -
 CSTACK$$Limit           0x2000'2080          --   Gb  - Linker created -
 DebugMon_Handler         0x800'2119    0x2  Code  Gb  at32f415_int.o [1]
 HardFault_Handler        0x800'210f    0x2  Code  Gb  at32f415_int.o [1]
-KeysBase::GetEvent()     0x800'0cc5   0x34  Code  Gb  KeysBase.o [1]
-KeysBase::Handler()      0x800'0cf9  0x144  Code  Gb  KeysBase.o [1]
+KeysBase::GetEvent()     0x800'0cc5   0x34  Code  Gb  KeysBase.o [3]
+KeysBase::Handler()      0x800'0cf9  0x144  Code  Gb  KeysBase.o [3]
 KeysBase::KeysBase(unsigned char const *, unsigned char)
-                         0x800'0c17   0xaa  Code  Gb  KeysBase.o [1]
+                         0x800'0c17   0xaa  Code  Gb  KeysBase.o [3]
 KeysBase::KeysBase(unsigned char const *, unsigned char) [subobject]
-                         0x800'0c09    0xe  Code  Gb  KeysBase.o [1]
+                         0x800'0c09    0xe  Code  Gb  KeysBase.o [3]
 KeysBase::SetEvent(KeysBase::Event)
-                         0x800'0e3d   0x10  Code  Gb  KeysBase.o [1]
+                         0x800'0e3d   0x10  Code  Gb  KeysBase.o [3]
 KeysLoop()               0x800'0f67  0x13a  Code  Gb  main.o [1]
 Keys_M128i1x::Read()     0x800'2175    0xc  Code  Wk  main.o [1]
 MemManage_Handler        0x800'2111    0x2  Code  Gb  at32f415_int.o [1]
@@ -406,90 +414,90 @@ UsageFault_Handler       0x800'2115    0x2  Code  Gb  at32f415_int.o [1]
                          0x800'1291   0x2c  Code  Lc  SystemInit.o [1]
 [local to xprintf_c]::xvfprintf(void (*)(int), char const *, __va_list)
                          0x800'0199  0x324  Code  Lc  xprintf.o [1]
-__aeabi_ldiv0            0x800'1d89         Code  Gb  I64DivZer.o [5]
-__aeabi_memcpy           0x800'15a9         Code  Gb  ABImemcpy.o [5]
-__aeabi_memcpy4          0x800'15c9         Code  Gb  ABImemcpy.o [5]
-__aeabi_memcpy8          0x800'15c9         Code  Gb  ABImemcpy.o [5]
-__aeabi_memset           0x800'0ecd         Code  Gb  ABImemset.o [5]
-__aeabi_uldivmod         0x800'1b19         Code  Gb  I64DivMod.o [5]
-__call_ctors             0x800'2075   0x18  Code  Gb  cppinit.o [3]
-__cmain                  0x800'208d         Code  Gb  cmain.o [5]
-__exit                   0x800'20c1   0x14  Code  Gb  exit.o [6]
-__iar_Memset             0x800'0ecd         Code  Gb  ABImemset.o [5]
-__iar_Memset_word        0x800'0ed5         Code  Gb  ABImemset.o [5]
-__iar_copy_init3         0x800'051f   0x2a  Code  Gb  copy_init3.o [5]
+__aeabi_ldiv0            0x800'1d89         Code  Gb  I64DivZer.o [7]
+__aeabi_memcpy           0x800'15a9         Code  Gb  ABImemcpy.o [7]
+__aeabi_memcpy4          0x800'15c9         Code  Gb  ABImemcpy.o [7]
+__aeabi_memcpy8          0x800'15c9         Code  Gb  ABImemcpy.o [7]
+__aeabi_memset           0x800'0ecd         Code  Gb  ABImemset.o [7]
+__aeabi_uldivmod         0x800'1b19         Code  Gb  I64DivMod.o [7]
+__call_ctors             0x800'2075   0x18  Code  Gb  cppinit.o [5]
+__cmain                  0x800'208d         Code  Gb  cmain.o [7]
+__exit                   0x800'20c1   0x14  Code  Gb  exit.o [8]
+__iar_Memset             0x800'0ecd         Code  Gb  ABImemset.o [7]
+__iar_Memset_word        0x800'0ed5         Code  Gb  ABImemset.o [7]
+__iar_copy_init3         0x800'051f   0x2a  Code  Gb  copy_init3.o [7]
 __iar_cstart_call_ctors
-                         0x800'2055   0x20  Code  Gb  cmain_call_ctors.o [5]
-__iar_data_init3         0x800'2005   0x28  Code  Gb  data_init.o [5]
-__iar_debug_exceptions   0x800'117f    0x1  Data  Gb  unwind_debug.o [6]
-__iar_program_start      0x800'20f1         Code  Gb  cstartup_M.o [5]
+                         0x800'2055   0x20  Code  Gb  cmain_call_ctors.o [7]
+__iar_data_init3         0x800'2005   0x28  Code  Gb  data_init.o [7]
+__iar_debug_exceptions   0x800'117f    0x1  Data  Gb  unwind_debug.o [8]
+__iar_program_start      0x800'20f1         Code  Gb  cstartup_M.o [7]
 __iar_tls$$INIT_ARRAY$$Base
                          0x800'2270          --   Gb  - Linker created -
 __iar_tls$$INIT_ARRAY$$Limit
                          0x800'2270          --   Gb  - Linker created -
-__iar_zero_init3         0x800'1f99   0x38  Code  Gb  zero_init3.o [5]
-__low_level_init         0x800'20ab    0x4  Code  Gb  low_level_init.o [3]
+__iar_zero_init3         0x800'1f99   0x38  Code  Gb  zero_init3.o [7]
+__low_level_init         0x800'20ab    0x4  Code  Gb  low_level_init.o [5]
 __sti__routine           0x800'0f35   0x16  Code  Lc  main.o [1]
 __vector_table           0x800'0000         Data  Gb  startup_at32f415.o [1]
-_call_main               0x800'2099         Code  Gb  cmain.o [5]
-_exit                    0x800'20b5         Code  Gb  cexit.o [5]
-buttons                 0x2000'0074    0x1  Data  Gb  Indication_M128i1x.o [1]
-crm_ahb_div_set          0x800'06e5    0xe  Code  Gb  at32f415_crm.o [2]
-crm_apb1_div_set         0x800'06f3    0xe  Code  Gb  at32f415_crm.o [2]
-crm_apb2_div_set         0x800'0701    0xe  Code  Gb  at32f415_crm.o [2]
+_call_main               0x800'2099         Code  Gb  cmain.o [7]
+_exit                    0x800'20b5         Code  Gb  cexit.o [7]
+buttons                 0x2000'0074    0x1  Data  Gb  Indication_M128i1x.o [2]
+crm_ahb_div_set          0x800'06e5    0xe  Code  Gb  at32f415_crm.o [4]
+crm_apb1_div_set         0x800'06f3    0xe  Code  Gb  at32f415_crm.o [4]
+crm_apb2_div_set         0x800'0701    0xe  Code  Gb  at32f415_crm.o [4]
 crm_auto_step_mode_enable
-                         0x800'083b   0x20  Code  Gb  at32f415_crm.o [2]
+                         0x800'083b   0x20  Code  Gb  at32f415_crm.o [4]
 crm_battery_powered_domain_reset
-                         0x800'070f   0x12  Code  Gb  at32f415_crm.o [2]
+                         0x800'070f   0x12  Code  Gb  at32f415_crm.o [4]
 crm_clock_source_enable
-                         0x800'064f   0x76  Code  Gb  at32f415_crm.o [2]
-crm_ertc_clock_enable    0x800'06d3   0x12  Code  Gb  at32f415_crm.o [2]
-crm_ertc_clock_select    0x800'06c5    0xe  Code  Gb  at32f415_crm.o [2]
-crm_flag_get             0x800'05ab   0x32  Code  Gb  at32f415_crm.o [2]
-crm_hext_stable_wait     0x800'05dd   0x2e  Code  Gb  at32f415_crm.o [2]
+                         0x800'064f   0x76  Code  Gb  at32f415_crm.o [4]
+crm_ertc_clock_enable    0x800'06d3   0x12  Code  Gb  at32f415_crm.o [4]
+crm_ertc_clock_select    0x800'06c5    0xe  Code  Gb  at32f415_crm.o [4]
+crm_flag_get             0x800'05ab   0x32  Code  Gb  at32f415_crm.o [4]
+crm_hext_stable_wait     0x800'05dd   0x2e  Code  Gb  at32f415_crm.o [4]
 crm_periph_clock_enable
-                         0x800'060b   0x44  Code  Gb  at32f415_crm.o [2]
-crm_pll_config           0x800'0721  0x102  Code  Gb  at32f415_crm.o [2]
-crm_reset                0x800'0549   0x62  Code  Gb  at32f415_crm.o [2]
-crm_sysclk_switch        0x800'0823    0xc  Code  Gb  at32f415_crm.o [2]
+                         0x800'060b   0x44  Code  Gb  at32f415_crm.o [4]
+crm_pll_config           0x800'0721  0x102  Code  Gb  at32f415_crm.o [4]
+crm_reset                0x800'0549   0x62  Code  Gb  at32f415_crm.o [4]
+crm_sysclk_switch        0x800'0823    0xc  Code  Gb  at32f415_crm.o [4]
 crm_sysclk_switch_status_get
-                         0x800'082f    0xc  Code  Gb  at32f415_crm.o [2]
+                         0x800'082f    0xc  Code  Gb  at32f415_crm.o [4]
 currentTime             0x2000'0060    0x8  Data  Gb  main.o [1]
 day                     0x2000'0079    0x1  Data  Gb  main.o [1]
-ertc_bcd_to_num          0x800'08e3   0x18  Code  Gb  at32f415_ertc.o [2]
-ertc_calendar_get        0x800'0b53   0x76  Code  Gb  at32f415_ertc.o [2]
-ertc_date_set            0x800'0a77   0x6c  Code  Gb  at32f415_ertc.o [2]
-ertc_divider_set         0x800'0a11   0x36  Code  Gb  at32f415_ertc.o [2]
-ertc_hour_mode_set       0x800'0a47   0x30  Code  Gb  at32f415_ertc.o [2]
-ertc_init_mode_enter     0x800'093d   0x30  Code  Gb  at32f415_ertc.o [2]
-ertc_init_mode_exit      0x800'096d    0xc  Code  Gb  at32f415_ertc.o [2]
-ertc_num_to_bcd          0x800'08b9   0x2a  Code  Gb  at32f415_ertc.o [2]
-ertc_reset               0x800'0979   0x98  Code  Gb  at32f415_ertc.o [2]
-ertc_time_set            0x800'0ae3   0x70  Code  Gb  at32f415_ertc.o [2]
-ertc_wait_update         0x800'0913   0x2a  Code  Gb  at32f415_ertc.o [2]
+ertc_bcd_to_num          0x800'08e3   0x18  Code  Gb  at32f415_ertc.o [4]
+ertc_calendar_get        0x800'0b53   0x76  Code  Gb  at32f415_ertc.o [4]
+ertc_date_set            0x800'0a77   0x6c  Code  Gb  at32f415_ertc.o [4]
+ertc_divider_set         0x800'0a11   0x36  Code  Gb  at32f415_ertc.o [4]
+ertc_hour_mode_set       0x800'0a47   0x30  Code  Gb  at32f415_ertc.o [4]
+ertc_init_mode_enter     0x800'093d   0x30  Code  Gb  at32f415_ertc.o [4]
+ertc_init_mode_exit      0x800'096d    0xc  Code  Gb  at32f415_ertc.o [4]
+ertc_num_to_bcd          0x800'08b9   0x2a  Code  Gb  at32f415_ertc.o [4]
+ertc_reset               0x800'0979   0x98  Code  Gb  at32f415_ertc.o [4]
+ertc_time_set            0x800'0ae3   0x70  Code  Gb  at32f415_ertc.o [4]
+ertc_wait_update         0x800'0913   0x2a  Code  Gb  at32f415_ertc.o [4]
 ertc_write_protect_disable
-                         0x800'0905    0xe  Code  Gb  at32f415_ertc.o [2]
+                         0x800'0905    0xe  Code  Gb  at32f415_ertc.o [4]
 ertc_write_protect_enable
-                         0x800'08fb    0xa  Code  Gb  at32f415_ertc.o [2]
+                         0x800'08fb    0xa  Code  Gb  at32f415_ertc.o [4]
 ev                      0x2000'0072    0x2  Data  Gb  main.o [1]
-exit                     0x800'20af    0x4  Code  Gb  exit.o [3]
-gpio_init                0x800'1909   0xd2  Code  Gb  at32f415_gpio.o [2]
-gpio_pin_remap_config    0x800'19db   0x50  Code  Gb  at32f415_gpio.o [2]
+exit                     0x800'20af    0x4  Code  Gb  exit.o [5]
+gpio_init                0x800'1909   0xd2  Code  Gb  at32f415_gpio.o [4]
+gpio_pin_remap_config    0x800'19db   0x50  Code  Gb  at32f415_gpio.o [4]
 hours                   0x2000'0076    0x1  Data  Gb  main.o [1]
 indicator               0x2000'0044   0x14  Data  Gb  main.o [1]
 keys                    0x2000'000c   0x38  Data  Gb  main.o [1]
 main                     0x800'10a1   0x84  Code  Gb  main.o [1]
-memset                   0x800'0e8d   0x14  Code  Gb  memset.o [5]
+memset                   0x800'0e8d   0x14  Code  Gb  memset.o [7]
 minutes                 0x2000'0077    0x1  Data  Gb  main.o [1]
 month                   0x2000'007a    0x1  Data  Gb  main.o [1]
 pwc_battery_powered_domain_access
-                         0x800'16d9   0x10  Code  Gb  at32f415_pwc.o [2]
+                         0x800'16d9   0x10  Code  Gb  at32f415_pwc.o [4]
 seconds                 0x2000'0078    0x1  Data  Gb  main.o [1]
 settingMode             0x2000'007c    0x1  Data  Gb  main.o [1]
 showDate                0x2000'007b    0x1  Data  Gb  main.o [1]
-strlen                   0x800'04e9         Code  Gb  strlen.o [5]
+strlen                   0x800'04e9         Code  Gb  strlen.o [7]
 strptr                  0x2000'006c    0x4  Data  Lc  xprintf.o [1]
-symbols                  0x800'1f1c   0x7c  Data  Gb  Indication_M128i1x.o [1]
+symbols                  0x800'1f1c   0x7c  Data  Gb  Indication_M128i1x.o [2]
 systemInit()             0x800'13f9   0x14  Code  Gb  SystemInit.o [1]
 systemTime              0x2000'0058    0x8  Data  Gb  main.o [1]
 system_clock_config()    0x800'12ed   0x6e  Code  Gb  SystemInit.o [1]
@@ -499,7 +507,7 @@ system_core_clock_update
 system_core_clock_update::sys_ahb_div_table
                          0x800'2148   0x10  Data  Lc  system_at32f415.o [1]
 systick_clock_source_config
-                         0x800'18e1   0x20  Code  Gb  at32f415_misc.o [2]
+                         0x800'18e1   0x20  Code  Gb  at32f415_misc.o [4]
 time                    0x2000'0000    0x4  Data  Gb  main.o [1]
 vxsprintf                0x800'04bd   0x22  Code  Gb  xprintf.o [1]
 xfputc                   0x800'0171   0x28  Code  Gb  xprintf.o [1]
@@ -507,11 +515,13 @@ year                    0x2000'0008    0x2  Data  Gb  main.o [1]
 
 
 [1] = C:\Users\user\Desktop\at32f415_project\Debug\Obj
-[2] = C:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers
-[3] = dl7M_tln.a
-[4] = dlpprt7M_tl_nc.a
-[5] = rt7M_tl.a
-[6] = shb_l.a
+[2] = C:\Users\user\Desktop\at32f415_project\Debug\Obj\Indication
+[3] = C:\Users\user\Desktop\at32f415_project\Debug\Obj\Keys
+[4] = C:\Users\user\Desktop\at32f415_project\Debug\Obj\drivers
+[5] = dl7M_tln.a
+[6] = dlpprt7M_tl_nc.a
+[7] = rt7M_tl.a
+[8] = shb_l.a
 
   8'536 bytes of readonly  code memory
     280 bytes of readonly  data memory

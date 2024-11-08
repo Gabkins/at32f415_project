@@ -2178,6 +2178,45 @@
             <name>$PROJ_DIR$\lib\drivers\src\at32f415_wwdt.c</name>
         </file>
     </group>
+    <group>
+        <name>Indication</name>
+        <file>
+            <name>$PROJ_DIR$\Indication_M128i1x.cpp</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Indication_M128i1x.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\IndicationBase.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\IndicatorConfig.h</name>
+        </file>
+    </group>
+    <group>
+        <name>Keys</name>
+        <file>
+            <name>$PROJ_DIR$\Keys_M128i1x.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\KeysBase.cpp</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\KeysBase.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\StaticQueue.h</name>
+        </file>
+    </group>
+    <group>
+        <name>RTC</name>
+        <file>
+            <name>$PROJ_DIR$\Rtc_at32f415.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\RtcBase.h</name>
+        </file>
+    </group>
     <file>
         <name>$PROJ_DIR$\at32f415_int.c</name>
     </file>
@@ -2188,40 +2227,10 @@
         <name>$PROJ_DIR$\hardware.h</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\Indication_M128i1x.cpp</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Indication_M128i1x.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\IndicationBase.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\IndicatorConfig.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Keys_M128i1x.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\KeysBase.cpp</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\KeysBase.h</name>
-    </file>
-    <file>
         <name>$PROJ_DIR$\main.cpp</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\Rtc_at32f415.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\RtcBase.h</name>
-    </file>
-    <file>
         <name>$PROJ_DIR$\lib\cmsis\cm4\device_support\startup\iar\startup_at32f415.s</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\StaticQueue.h</name>
     </file>
     <file>
         <name>$PROJ_DIR$\lib\cmsis\cm4\device_support\system_at32f415.c</name>

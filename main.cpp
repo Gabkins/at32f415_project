@@ -123,8 +123,6 @@ void KeysLoop()
 
 
 
-
-
 void main()
 {
   systemInit();
@@ -152,14 +150,10 @@ void main()
           indicator.Print(0, "%d", currentTime.year);
         }
     
-    
 
     KeysLoop();
     //indicator.Print(0, "%02d%02d", day, month);
 
  
- 
-    
-    
   }
 }
